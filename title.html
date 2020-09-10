@@ -1,25 +1,42 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
+    <meta charset="UTF-8">
     <title>Book List</title>
-    <script src="books.js"></script>
 </head>
 
 <body>
-    <p>
-        Book Title
-        <br />
-        <input type="text" id="title" size="80" />
-    </p>
 
-    <input type="button" value="Show titles" id="titlesBtn" onclick="showTitles();"/><br/>
+    <form>
+        <p><label for="book_title">Book Title:</label><br />
+            <input type="text" id="book_title" name="book_title" size="104"><br /></p>
+        <p><label for="author_name">Author:</label><br />
+            <input type="text" id="author_name" name="author_name" size="104"><br /></p>
+        <p><label for="lib_id">Library ID:</label><br />
+            <input type="text" id="lib_id" name="lib_id" size="104"><br /></p>
 
-    <input type="button" value ="Author" id="authorBtn" onClick="showAuthor();"/><br/>
-    <input type="button" value="library ID" id="libraryBtn" onClick="showLibraryId();"/> <br/>
+        <p><button>Add book to library</button><button>Show titles</button><button>Show authors</button><button>Show
+                IDs</button><br /></p>
+        <textarea name="information" rows="10" cols="90"></textarea><br>
 
-    <p>
-        <textarea id="displayArea" rows="10" cols="80"></textarea>
-    </p>
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
