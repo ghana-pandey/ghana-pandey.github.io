@@ -1,10 +1,7 @@
-function isEmptyObj(obj)
-{
-    for(let key in obj)
-    {
-        return false;
-    }
-    return true;
-}
-obj.user={};
-console.log(isEmptyObj(obj));
+let name = "Pete";
+
+function sayHi() { alert("Hi, " + name); }
+
+name = "John";
+
+sayHi(); 

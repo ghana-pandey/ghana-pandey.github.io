@@ -1,2 +1,7 @@
-const a = {x: 5};
-a.x = 6;
+let name = "Pete";
+
+function sayHi() { alert("Hi, " + name); }
+
+name = "John";
+
+sayHi(); 
