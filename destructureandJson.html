@@ -4,9 +4,40 @@
     <meta charset="UTF-8" />
     <title>CS 303 - Assignment List</title>
 
-  </head>
-
   <body>
+    
+    <!-- add mocha css, to show results -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.css">
+    <!-- add mocha framework code -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/3.2.0/mocha.js"></script>
+    <script>
+        mocha.setup('bdd'); // minimal setup
+    </script>
+    <!-- add chai -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/3.5.0/chai.js"></script>
+    <script>
+        // chai has a lot of stuff, let's make assert global
+        let assert = chai.assert;
+    </script>
+</head>
+
+</body>
+
+    
+
+    <!-- the script with tests (describe, it...) -->
+    <!-- <script src="test.js"></script> -->
+    <script src="maxSalary.js"></script>
+    
+
+    <!-- the element with id="mocha" will contain test results -->
+    <div id="mocha"></div>
+
+    <!-- run tests! -->
+    <script>
+        mocha.run();
+    </script>
+</body>
     <header><h1>Destructor and json - Class CS303 MSD</h1></header>
     <h2>Week 2 - Day 2</h2>
     <ul>
