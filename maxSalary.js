@@ -15,26 +15,11 @@ function topSalary(salaries) {
     for(const [name, salary] of Object.entries(salaries)) {
       if (max < salary) {
         max = salary;
-        maxName = name;
+       // maxName = name;
       }
     }
   
-    return maxName;
+    return max;
   }
-  describe("topSalary",function()
-  {
-it("returns top-paid",function()
-{
-    let salaries={
-        "john":100,
-        "mary":300,
-        "Hitler":700
-    
-    
-    }; 
-    asserts.equal(topSalary(salaries),"Hitler");
-});
-  });
 }
-
-  
+console.log(topSalary(salaries));

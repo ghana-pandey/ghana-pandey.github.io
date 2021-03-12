@@ -1,40 +1,12 @@
-"use strict";
+let abc = [{age:1}, {age:2}, {age:33} ];
+function maxage()
 {
-let salaries={
-    "john":100,
-    "mary":300,
-    "Hitler":700
-
-
-};
-function topSalary(salaries) {
-
-    let max = 0;
-    let maxName = null;
-  
-    for(const [name, salary] of Object.entries(salaries)) {
-      if (max < salary) {
-        max = salary;
-        maxName = name;
-      }
-    }
-  
-    return maxName;
-  }
-  describe("topSalary",function()
+  let maxage=abc.reduce((firstvlue,secondvalue)=>
   {
-it("returns top-paid",function()
-{
-    let salaries={
-        "john":100,
-        "mary":300,
-        "Hitler":700
-    
-    
-    }; 
-    asserts.equal(topSalary(salaries),"Hitler");
-});
+    return firstvlue.age>= secondvalue.age  ? firstvlue.age: secondvalue.age;
   });
+  console.log("the maximum elemtn of array",maxage);
+  return maxage;
 }
-
-  
+const agearrray=peopleArray.map(maxage);
+console.log(agearrray)
