@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>javascript: calculate two numbers</title>
+
+</head>
+
+<body>
+
+    <li><a href="index.html">Back to Home Page</a></li>
+
+    <br/>
+   <p>First Value</p>
+   <input type="text" id="n1" /><br /><br />
+
+   <p>Second Value</p>
+   <input type="text" id="n2" /><br /><br />
+
+   <span> Operations: </span>
+
+   <br/>
+   <button onclick="calcA();">+</button>
+   <button onclick="calcM();">-</button>
+   <button onclick="calcMu();">X</button>
+   <br/>
+
+   <h4> Result: </h4>
+   <div id="result"></div>
+
+
+
+   <br/>
+
+
+
+
+   <script>
+
+      function calcM() {
+         let n1 = parseFloat(document.getElementById('n1').value);
+         let n2 = parseFloat(document.getElementById('n2').value);
+
+         {
+            document.getElementById('result').innerHTML = n1 - n2;
+         }
+
+      }
+      function calcMu() {
+         let n1 = parseFloat(document.getElementById('n1').value);
+         let n2 = parseFloat(document.getElementById('n2').value);
+
+         {
+            document.getElementById('result').innerHTML = n1 * n2;
+         }
+
+      }
+      function calcA() {
+         let n1 = parseFloat(document.getElementById('n1').value);
+         let n2 = parseFloat(document.getElementById('n2').value);
+
+         {
+            document.getElementById('result').innerHTML = n1 + n2;
+         }
+
+      }
+
+
+   </script>
+
+
+
+</body>
+<br/>
+<footer>validate link goes here.</footer>
+
+</html>
